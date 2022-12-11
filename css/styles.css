@@ -127,6 +127,9 @@ img {
 }
 .slogan-section {
   background-color: var(--background-grey);
+  background-image: url(/images/overlay.png), url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 0;
   text-align: center;
 }
