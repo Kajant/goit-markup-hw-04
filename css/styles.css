@@ -9,6 +9,7 @@
   --transparent-white: rgba(255, 255, 255, 60%);
   --line-light: #ececec;
   --leaflet-border: #eee;
+  --social-icon: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -96,18 +97,22 @@ img {
   gap: 50px;
   margin-left: auto;
 }
+.tel-mail-icon {
+  margin-right: 10px;
+}
 .tel-mail-link {
+  fill: var(--light-grey);
   font-weight: 500;
   color: var(--light-grey);
   letter-spacing: 0.02em;
   line-height: 1.1;
   text-align: right;
 }
-.tel-mail-link:hover {
-  color: var(--brand-blue);
-}
+
+.tel-mail-link:hover,
 .tel-mail-link:focus {
   color: var(--brand-blue);
+  fill: var(--brand-blue);
 }
 .nav {
   display: flex;
@@ -154,7 +159,12 @@ img {
   padding: 10px 41px;
   margin: 30px auto 0;
 }
+.advantage-icon {
+  background-color: var(--lighter-grey);
+  padding: 25px 100px;
+}
 .advantage {
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -182,7 +192,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .member-text {
-  padding: 30px 0;
+  padding-top: 30px;
   text-align: center;
 }
 .member {
@@ -196,6 +206,25 @@ img {
   line-height: 1.2;
   margin-top: 10px;
 }
+.social-links {
+  display: flex;
+  margin-top: 16px;
+  padding: 0px 32px 30px;
+  justify-content: space-between;
+}
+.circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white);
+  fill: var(--social-icon);
+}
+.circle:hover,
+.circle:focus {
+  background-color: var(--brand-blue);
+  fill: var(--white);
+}
+
 .bottom-box {
   background-color: var(--background-grey);
   padding-top: 60px;
