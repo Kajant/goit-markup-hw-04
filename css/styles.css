@@ -114,6 +114,7 @@ img {
 .tel-mail-link:hover,
 .tel-mail-link:focus {
   color: var(--brand-blue);
+  outline: transparent;
 }
 .nav {
   display: flex;
